@@ -22,12 +22,12 @@
       padding: 0 0.5rem;
       line-height: 5rem;
       color: var(--gray-300);
-      
-      transition: color 0.2s;
 
       & + a {
         margin-left: 2rem;
       }
+
+      transition: color 0.2s;
 
       &:hover {
         color: var(--white);
@@ -49,5 +49,9 @@
         background: var(--yellow-500);
       }
     }
+  }
+
+  button {
+    margin-left: auto;
   }
 }
