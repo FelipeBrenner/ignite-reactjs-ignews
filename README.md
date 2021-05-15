@@ -1,6 +1,6 @@
-<h2 align="center">
+<h3 align="center">
   <img alt="logo" title="logo" src="./.github/logo.svg" width="220px" />
-</h2>
+</h3>
 
 <p align="center">
   <img alt="ignews" title="ignews" src="./.github/ignews.png" width="100%" />
@@ -14,15 +14,21 @@ Esse projeto está sendo desenvolvido com as seguintes tecnologias:
 - TypeScript
 - NextJS
 - Stripe (plataforma de pagamentos online, no qual foi utilizado sua biblioteca e API para realização das inscrições)
+- Next Auth
 
 ## 📖 Conceitos
 
 Os seguintes conceitos foram estudados:
 
-- Client Side Rendering (CSR; renderização de página na qual as informações são carregadas a partir de alguma ação do usuário; quando não necessita de indexação no Google)
-- Server Side Rendering (SSR; renderização de página que terá as informações do html em tempo real; é diferente para cada usuário; quando necessita de indexação no Google)
-- Static Site Generation (SSG; renderização de página que terá o mesmo html compartilhado para todos os usuários; atualizará as informações a cada tanto tempo, determindo no código; quando necessita de indexação no Google)
-- API Routes (feature)
+- Renderização de página
+  - Client Side Rendering (CSR; as informações são carregadas a partir de alguma ação do usuário; quando não necessita de indexação no Google)
+  - Server Side Rendering (SSR; as informações do html são atualizadas em tempo real; é diferente para cada usuário; quando necessita de indexação no Google)
+  - Static Site Generation (SSG; mesmo html compartilhado para todos os usuários, no qual as informações são atualizadas a cada tanto tempo determindo no código; quando necessita de indexação no Google)
+- API Routes (feature; são executadas utilizando o conceito de Serveless, no qual as rotas não criam um servidor 24 horas rodando que nem com Axios, só sobe e desce os ambientes conforme elas são chamadas)
+- Estratégias de autenticação (estudar quando utilizar cada uma com mais informações nesta própria [documentação](https://nextjs.org/docs/authentication) do NextJS)
+  - JWT (salvo no storage; tem data de expiração)
+  - Next Auth (sistema simples; independe do back end; utilizado quando necessita fazer login com algum sistema social, por exemplo Facebook ou GitHub; utilizado quando não se quer armazenar credenciais de acesso do usuário; armazena nos cookies)
+  - Cognito, Auth0 (providers de autenticação externa; integram com o Next Auth; armazenam dados do usuário)
 
 ## 💻 Projeto
 
