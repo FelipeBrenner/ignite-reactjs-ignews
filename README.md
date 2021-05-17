@@ -16,6 +16,7 @@ Esse projeto está sendo desenvolvido com as seguintes tecnologias:
 - Stripe (plataforma de pagamentos online, no qual foi utilizado sua API para realização das inscrições)
 - Next Auth (sistema de autenticação para realizar o sistema de login com as API Routes)
 - FaunaDB (banco de dados recomendado para funções Serveless)
+- Prismic CMS
 
 ## 📖 Conceitos
 
@@ -30,6 +31,9 @@ Anotações de conceitos estudados:
   - JWT (salvo no storage; tem data de expiração)
   - Next Auth (sistema simples; independe do back end; tem data de expiração; utilizado quando necessita fazer login com algum sistema social, por exemplo Facebook ou GitHub; utilizado quando não se quer armazenar credenciais de acesso do usuário; informações ficam armazenadas nos cookies)
   - Cognito, Auth0 (providers de autenticação externa; integram com o Next Auth; armazenam dados do usuário)
+- JAMStack (JavaScript API Markup; conceito de aplicações completas que dependem menos de um back end)
+- CMS (Content Management System; projetos com painel de administração pronto e é possível criar conteúdo dentro; exemplo Wordpress. Drupal, Joomla, Magento)
+- Headless CMS (Painel de administração + API HTTP, GraphQL, SDK; exemplo Strapi, Ghost, Keystone, GraphCMS, Prismic CMS, Contentful, Shopify, Saleor)
 
 ## 💻 Projeto
 
