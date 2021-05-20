@@ -16,7 +16,7 @@ Esse projeto está sendo desenvolvido com as seguintes tecnologias:
 - Stripe (plataforma de pagamentos online, no qual foi utilizado sua API para realização das inscrições)
 - Next Auth (sistema de autenticação para realizar o sistema de login com as API Routes)
 - FaunaDB (banco de dados recomendado para funções Serveless)
-- Prismic CMS
+- Prismic CMS (plataforma de CMS que conterá os conteúdos dos posts que serão consumidos no código com sua API)
 
 ## 📖 Conceitos
 
