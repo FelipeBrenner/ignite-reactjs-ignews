@@ -10,7 +10,7 @@ export default function Posts() {
 
       <main className={styles.container}>
         <div className={styles.posts}>
-          <a>
+          <a href="#">
             <time>12 de março de 2021</time>
             <strong>Integração do Material UI com ReactJS</strong>
             <p>
@@ -19,7 +19,7 @@ export default function Posts() {
               WhatsApp Web
             </p>
           </a>
-          <a>
+          <a href="#">
             <time>12 de março de 2021</time>
             <strong>Integração do Material UI com ReactJS</strong>
             <p>
@@ -28,7 +28,7 @@ export default function Posts() {
               WhatsApp Web
             </p>
           </a>
-          <a>
+          <a href="#">
             <time>12 de março de 2021</time>
             <strong>Integração do Material UI com ReactJS</strong>
             <p>
