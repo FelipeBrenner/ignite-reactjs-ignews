@@ -43,18 +43,20 @@ O ig.news é um blog para listagem de posts. Foi desenvolvido durante as aulas d
 
 Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/gl0fHkQgvaUfXNjuwGtDDs/ig.news?node-id=1%3A2). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
-## ⚙ Instalação
+## ⚙ Clone e execução
 
 ```
 # Abra um terminal e copie este repositório com o comando
 $ git clone https://github.com/FelipeBrenner/ignite-reactjs-ignews.git
 ```
 
-```
+```bash
 # Acesse a pasta da aplicação
 $ cd ignite-reactjs-ignews
 
-# Crie um arquivo .env.local e coloque as variaveis de ambiente baseado no arquivo .env.example, o que exige um certo conhecimento para criá-las e configurá-las em cada respectiva aplicação, Stripe, GitHub, FaunaDB e Prismic
+# Crie um arquivo .env.local e coloque as variaveis de ambiente baseado no arquivo .env.example, o que exige
+# um certo conhecimento para criá-las e configurá-las em cada respectiva aplicação, Stripe, GitHub, FaunaDB
+# e Prismic
 # No projeto online que está disponível eu adicionei-as no próprio Vercel, por isso funciona lá
 $ cp .env.example .env.local
 
@@ -62,10 +64,13 @@ $ cp .env.example .env.local
 $ yarn
 ```
 
-```
-# Para o sistema de inscrição funcionar, é necessário o download da última versão do stripe-cli em https://github.com/stripe/stripe-cli/releases/tag/v1.5.14, e na pasta que contém ele executar o seguinte comando para ouvir os eventos desenvolvidos em /pages/api/webhooks
+```bash
+# Para o sistema de inscrição funcionar, é necessário o download da última versão do stripe-cli em
+# https://github.com/stripe/stripe-cli/releases/tag/v1.5.14, e na pasta que contém ele executar o seguinte
+# comando para ouvir os eventos desenvolvidos em /pages/api/webhooks
 $ stripe listen --forward-to localhost:3000/api/webhooks
-# Para testar um cartão de crédito válido para a compra pode ser preenchido o número 4242 4242 4242 4242, e o resto das informação com qualquer coisa
+# Para testar um cartão de crédito válido para a compra pode ser preenchido o número
+# 4242 4242 4242 4242, e o resto das informação com qualquer coisa
 
 # Inicie a aplicação
 $ yarn dev
