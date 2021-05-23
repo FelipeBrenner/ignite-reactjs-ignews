@@ -8,7 +8,7 @@
 
 ## 🚀 Tecnologias e Bibliotecas
 
-Esse projeto está sendo desenvolvido com as seguintes tecnologias:
+Projeto desenvolvido com as seguintes tecnologias:
 
 - ReactJS
 - TypeScript
@@ -25,9 +25,9 @@ Anotações de conceitos estudados:
 - Renderização de página
   - Client Side Rendering (CSR; as informações são carregadas a partir de alguma ação do usuário; quando não necessita de indexação no Google)
   - Server Side Rendering (SSR; as informações do html são atualizadas em tempo real; é diferente para cada usuário; quando necessita de indexação no Google)
-  - Static Site Generation (SSG; mesmo html compartilhado para todos os usuários, no qual as informações são atualizadas a cada tanto tempo determindo no código; quando necessita de indexação no Google)
+  - Static Site Generation (SSG; mesmo html compartilhado para todos os usuários, no qual as informações são atualizadas a cada tanto tempo determinado no código; quando necessita de indexação no Google)
 - API Routes (são executadas utilizando o conceito de Serveless, no qual as rotas não criam um servidor 24 horas rodando que nem com Axios, só sobe e desce os ambientes conforme elas são chamadas)
-- Estratégias de autenticação (estudar quando utilizar cada uma com mais detalhes nesta própria [documentação](https://nextjs.org/docs/authentication) do NextJS)
+- Estratégias de autenticação
   - JWT (salvo no storage; tem data de expiração)
   - Next Auth (sistema simples; independe do back end; tem data de expiração; utilizado quando necessita fazer login com algum sistema social, por exemplo Facebook ou GitHub; utilizado quando não se quer armazenar credenciais de acesso do usuário; informações ficam armazenadas nos cookies)
   - Cognito, Auth0 (providers de autenticação externa; integram com o Next Auth; armazenam dados do usuário)
@@ -42,6 +42,35 @@ O ig.news é um blog para listagem de posts. Foi desenvolvido durante as aulas d
 ## 🔖 Layout
 
 Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/gl0fHkQgvaUfXNjuwGtDDs/ig.news?node-id=1%3A2). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+
+## ⚙ Instalação
+
+```
+# Abra um terminal e copie este repositório com o comando
+$ git clone https://github.com/FelipeBrenner/ignite-reactjs-ignews.git
+```
+
+```
+# Acesse a pasta da aplicação
+$ cd ignite-reactjs-ignews
+
+# Crie um arquivo .env.local e coloque as variaveis de ambiente baseado no arquivo .env.example, o que exige um certo conhecimento para criá-las e configurá-las em cada respectiva aplicação, Stripe, GitHub, FaunaDB e Prismic
+# No projeto online que está disponível eu adicionei-as no próprio Vercel, por isso funciona lá
+$ cp .env.example .env.local
+
+# Instale as dependências
+$ yarn
+```
+
+```
+# Para o sistema de inscrição funcionar, é necessário o download da última versão do stripe-cli em https://github.com/stripe/stripe-cli/releases/tag/v1.5.14, e na pasta que contém ele executar o seguinte comando para ouvir os eventos desenvolvidos em /pages/api/webhooks
+$ stripe listen --forward-to localhost:3000/api/webhooks
+# Para testar um cartão de crédito válido para a compra pode ser preenchido o número 4242 4242 4242 4242, e o resto das informação com qualquer coisa
+
+# Inicie a aplicação
+$ yarn dev
+
+```
 
 ---
 
