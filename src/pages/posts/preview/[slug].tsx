@@ -6,7 +6,7 @@ import Link from "next/link";
 import { RichText } from "prismic-dom";
 import { useEffect } from "react";
 import { getPrismicClient } from "../../../services/prismic";
-import styles from ".././post.module.scss";
+import styles from "../post.module.scss";
 
 interface PostPreviewProps {
   post: {
@@ -45,7 +45,7 @@ export default function PostPreview({ post }: PostPreviewProps) {
           <div className={styles.continueReading}>
             Wanna continue reading?
             <Link href="/">
-              <a href="">Subscribe now 🤗</a>
+              <a>Subscribe now 🤗</a>
             </Link>
           </div>
         </article>
