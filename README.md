@@ -66,8 +66,8 @@ $ yarn
 
 ```bash
 # Para o sistema de inscrição funcionar, é necessário o download da última versão do stripe-cli em
-# https://github.com/stripe/stripe-cli/releases/tag/v1.5.14, e na pasta que contém ele executar o seguinte
-# comando para ouvir os eventos desenvolvidos em /pages/api/webhooks
+# https://github.com/stripe/stripe-cli/releases/tag/v1.5.14, e na pasta que contém ele abrir um cmd
+# e rodar o seguinte comando para ouvir os eventos desenvolvidos em /src/pages/api/webhooks
 $ stripe listen --forward-to localhost:3000/api/webhooks
 # Para testar um cartão de crédito válido para a compra pode ser preenchido o número
 # 4242 4242 4242 4242, e o resto das informação com qualquer coisa
