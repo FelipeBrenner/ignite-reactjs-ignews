@@ -17,6 +17,7 @@ Projeto desenvolvido com as seguintes tecnologias:
 - Next Auth (sistema de autenticação para realizar o sistema de login com as API Routes)
 - FaunaDB (banco de dados recomendado para funções Serveless)
 - Prismic CMS (plataforma de CMS que contém os conteúdos dos posts que serão consumidos no código com sua API)
+- Jest (framework para testes)
 
 ## 📖 Conceitos
 
@@ -34,6 +35,8 @@ Anotações de conceitos estudados:
 - JAMStack (JavaScript API Markup; conceito de aplicações completas que dependem menos de um back end)
 - CMS (Content Management System; projetos com painel de administração pronto e é possível criar conteúdo dentro; exemplo Wordpress. Drupal, Joomla, Magento)
 - Headless CMS (Painel de administração + API HTTP, GraphQL, SDK; exemplo Strapi, Ghost, Keystone, GraphCMS, Prismic CMS, Contentful, Shopify, Saleor)
+- Jest
+  - Mock (função que simula um funcionamento diferente do real para funcionalidades externas do código para a execução de testes)
 
 ## 💻 Projeto
 
